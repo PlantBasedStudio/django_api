@@ -3,5 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.getData, name="api-overview"),
+    path('', views.index),
+    path('products/', views.getData, name='products'), #endpoint
+    path('products/add', views.addProduct, name='add_product'),
 ]
